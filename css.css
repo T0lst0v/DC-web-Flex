@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: rgb(240, 252, 250);
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-items: center;
+  margin: auto;
+  row-gap: 10px;
+}
+.header {
+  position: relative;
+  display: flex;
+  height: 200px;
+  background: linear-gradient(to left, #7ccba3 10%, #85e7b4 60%);
+  border-radius: 10px;
+  border: solid 1px rgb(198, 198, 198);
+}
+.img_robot {
+  height: 200px;
+  border-radius: 10px;
+}
+h1 {
+  color: white;
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  font-weight: normal;
+  text-justify: right;
+  text-align: right;
+  font-size: 24px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  background: linear-gradient(to right, #e6c1bb 10%, #f2e5e2 50%);
+  justify-content: right;
+  border: solid 1px rgb(208, 208, 208);
+}
+h2 {
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 36px;
+  font-weight: normal;
+  text-justify: right;
+  text-align: left;
+  font-size: 22px;
+  text-shadow: 0px 1px 1px #ab5245;
+}
+.img_happy {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.cards_container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.card {
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 10px 20px -20px black;
+  border-radius: 6px;
+  border: solid 1px rgb(232, 232, 232);
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  margin: 30px;
+}
+li {
+  margin-top: 6px;
+  background-color: lightcyan;
+}
+
+.done {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 20px;
+  width: 60px;
+  background-color: rgb(206, 65, 40);
+  color: white;
+  text-align: center;
+  box-shadow: 0px 2px 4px -2px black;
+  /* transform: rotate(270deg); */
+  border-radius: 0px 0px 6px 6px;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    display: none;
+  }
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+  .header {
+    display: flex;
+    position: relative;
+    background: #85e7b4;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .img_robot {
+    position: relative;
+  }
+  h1 {
+    right: auto;
+    top: auto;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 0px 2px #353535;
+  }
+}
