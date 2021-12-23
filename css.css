@@ -51,7 +51,7 @@ h1 {
   margin: auto;
   border-radius: 10px;
   background: linear-gradient(to right, #e6c1bb 10%, #f2e5e2 50%);
-  justify-content: right;
+  /* justify-content: right; */
   border: solid 1px rgb(208, 208, 208);
 }
 h2 {
@@ -66,6 +66,8 @@ h2 {
   text-shadow: 0px 1px 1px #ab5245;
 }
 .img_happy {
+  position: absolute;
+  right: 0;
   height: 100px;
   border-radius: 10px;
 }
